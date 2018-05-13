@@ -27,10 +27,11 @@ public class LoginTest
 		
 		driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
 		
+		System.out.println("Program Start");
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("ShivamKumbar2115");
 		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("Shivam@123");
-		//driver.findElement(By.linkText("Log In")).click();
-		
+		driver.findElement(By.linkText("Log In")).click();
+		System.out.println("Program End");
 	}
 	
 	@AfterTest
